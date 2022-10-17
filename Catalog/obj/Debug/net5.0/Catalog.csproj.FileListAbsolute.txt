@@ -72,15 +72,6 @@ D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customA
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\ViewStore.Abstractions.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\ViewStore.MongoDb.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\linux\native\libsnappy64.so
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\linux\native\libzstd.so
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\osx\native\libsnappy64.dylib
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\osx\native\libzstd.dylib
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
@@ -100,3 +91,5 @@ D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customA
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\obj\Debug\net5.0\Catalog.pdb
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\obj\Debug\net5.0\Catalog.genruntimeconfig.cache
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\obj\Debug\net5.0\ref\Catalog.dll
+D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\Snappier.dll
+D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\ZstdSharp.dll

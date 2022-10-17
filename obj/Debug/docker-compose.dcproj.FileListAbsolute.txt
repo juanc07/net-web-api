@@ -26,3 +26,5 @@ D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customA
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Catalog.pdb
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\ZstdSharp.dll
+D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Snappier.dll
