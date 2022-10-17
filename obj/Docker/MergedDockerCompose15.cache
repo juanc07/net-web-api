@@ -1,0 +1,43 @@
+networks:
+  net5tutorial:
+    external: true
+    name: net5tutorial
+services:
+  catalog:
+    build:
+      context: D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTPS_PORT: '8081'
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      MongoDBSettings:Host: mongo
+      MongoDBSettings:Password: password123
+    image: jclaridad07/catalog:v4.1.6
+    networks:
+      net5tutorial: {}
+    ports:
+    - published: 8081
+      target: 80
+    - target: 80
+    - published: 8082
+      target: 443
+    - target: 443
+    volumes:
+    - C:\Users\juanc\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https/:rw
+    - C:\Users\juanc\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:rw
+  mongo:
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+    image: mongo
+    networks:
+      net5tutorial: {}
+    ports:
+    - published: 27017
+      target: 27017
+    restart: always
+    volumes:
+    - mongodbdata:/data/db:rw
+version: '3.4'
+volumes:
+  mongodbdata: {}
