@@ -1,0 +1,40 @@
+version: "3.8"
+
+networks:
+    net5tutorial:
+     external: true  
+
+volumes:
+  mongodbdata:
+
+services:
+ mongo:
+   image: mongo
+   restart: always
+   ports:
+    - 27017:27017
+   environment:
+    - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+    - MONGO_INITDB_ROOT_PASSWORD=password123
+   volumes:
+    - mongodbdata:/data/db
+   networks: 
+    - net5tutorial
+
+ catalog:
+    build: ./Catalog    
+    networks: 
+    - net5tutorial
+    ports:
+      - 8081:80
+      - 8082:443
+    environment:
+        - MongoDBSettings:Host=mongo
+        - MongoDBSettings:Password=password123
+        - ASPNETCORE_ENVIRONMENT=Development
+        - ASPNETCORE_URLS=https://+:443;http://+:80
+        - ASPNETCORE_HTTPS_PORT=8081        
+    volumes:
+        - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
+        - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/
+    image: ${DOCKER_REGISTRY-}jclaridad07/catalog:v4

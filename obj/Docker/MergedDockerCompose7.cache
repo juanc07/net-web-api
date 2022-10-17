@@ -1,0 +1,19 @@
+services:
+  catalog:
+    build:
+      context: D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTPS_PORT: '8081'
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    ports:
+    - published: 8081
+      target: 80
+    - target: 80
+    - published: 8082
+      target: 443
+    - target: 443
+    volumes:
+    - C:\Users\juanc\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https/:rw
+    - C:\Users\juanc\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:rw
+version: '3.8'
