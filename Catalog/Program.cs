@@ -21,13 +21,13 @@ namespace Catalog
             .ConfigureWebHostDefaults(webBuilder =>
             {
                 webBuilder.UseStartup<Startup>();
-                webBuilder.UseKestrel(opts =>
+                /*webBuilder.UseKestrel(opts =>
                 {
                     opts.ListenLocalhost(5001, listenOptions =>
                     {
                         listenOptions.UseHttps("wildcard.pfx", "pass123");
                     });
-                });
+                });*/
             });
     }
 }

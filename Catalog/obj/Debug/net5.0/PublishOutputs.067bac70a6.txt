@@ -23,8 +23,6 @@ D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customA
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\Swashbuckle.AspNetCore.Swagger.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\ViewStore.Abstractions.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\ViewStore.MongoDb.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\ZstdSharp.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\runtimes\linux\native\libmongocrypt.so
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog\bin\Debug\net5.0\publish\runtimes\osx\native\libmongocrypt.dylib
