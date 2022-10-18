@@ -1,19 +1,30 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
-WORKDIR /app
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS prepare-restore-files
+ENV PATH="${PATH}:/root/.dotnet/tools"
+RUN dotnet tool install --global --no-cache dotnet-subset --version 0.3.0
+WORKDIR /source
 EXPOSE 80
 EXPOSE 443
-#ENV ASPNETCORE_URLS=https://+:8081
+##COPY . .
+COPY *.csproj Catalog/
+RUN dotnet subset restore Catalog/Catalog.csproj --root-directory /source --output restore_subset/
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-WORKDIR /src
-COPY . .
-RUN dotnet restore
-COPY . .
-RUN dotnet publish "Catalog.csproj" -c Release -o /app/publish
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /source
+COPY --from=prepare-restore-files /source/restore_subset .
+RUN dotnet restore Catalog/Catalog.csproj
 
-FROM base AS final
+# copy and build app and libraries
+COPY . Catalog/
+WORKDIR /source/Catalog
+RUN dotnet build -c release --no-restore
+
+FROM build AS publish
+RUN dotnet publish -c release --no-build -o /app
+
+# final stage/image
+FROM mcr.microsoft.com/dotnet/runtime:6.0
 WORKDIR /app
-COPY --from=build /app/publish .
+COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "Catalog.dll"]

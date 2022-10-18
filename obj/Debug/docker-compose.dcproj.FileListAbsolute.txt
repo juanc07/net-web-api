@@ -1,4 +1,3 @@
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Catalog.deps.json
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Catalog.runtimeconfig.json
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Catalog.runtimeconfig.dev.json
@@ -22,9 +21,10 @@ D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customA
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Newtonsoft.Json.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\DnsClient.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\SharpCompress.dll
+D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\ZstdSharp.dll
+D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Snappier.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Newtonsoft.Json.Bson.dll
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Catalog.pdb
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\obj\Debug\docker-compose.dcproj.CopyComplete
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\ZstdSharp.dll
-D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\bin\Debug\Snappier.dll

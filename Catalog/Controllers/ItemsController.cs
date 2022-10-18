@@ -31,7 +31,7 @@ namespace Catalog.Controllers
         }
 
         // GET /items/{id}
-        [RequireHttps]
+        //[RequireHttps]
         [HttpGet("{id}")]
         public async Task<ActionResult<ItemDto>> GetItemAsync(Guid id)
         {
@@ -43,7 +43,7 @@ namespace Catalog.Controllers
             return item.AsDto();
         }
 
-        [RequireHttps]
+        //[RequireHttps]
         [HttpPost]
         public async Task<ActionResult<ItemDto>> CreateItemAsync(CreateItemDto itemDto)
         {
@@ -60,7 +60,7 @@ namespace Catalog.Controllers
         }
 
         // PUT /items/id
-        [RequireHttps]
+        //[RequireHttps]
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateItemAsync(Guid id, UpdateItemDto itemDto)
         {
@@ -80,7 +80,7 @@ namespace Catalog.Controllers
             return NoContent();
         }
 
-        [RequireHttps]
+        //[RequireHttps]
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteItemAsync(Guid id)
         {

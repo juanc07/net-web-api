@@ -3,9 +3,9 @@ version: '3.4'
 services:
   catalog:
     image: jclaridad07/catalog:dev
-    container_name: Catalog_1
+    container_name: Catalog
     build:
-      target: base
+      target: prepare-restore-files
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "Catalog"

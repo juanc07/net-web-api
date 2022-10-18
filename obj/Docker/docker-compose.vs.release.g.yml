@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   catalog:
-    container_name: Catalog_1
+    container_name: Catalog
     build:
       labels:
         com.microsoft.created-by: "visual-studio"
