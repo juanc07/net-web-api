@@ -34,8 +34,8 @@ services:
         - ASPNETCORE_ENVIRONMENT=Development
         - ASPNETCORE_URLS=https://+:443;http://+:80
         - ASPNETCORE_HTTPS_PORT=8081        
-    image: jclaridad07/catalog:v4.1.6
-    #volumes:
-       # - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
-       #- ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/
-    #image: ${DOCKER_REGISTRY-}jclaridad07/catalog:v4
+    #image: jclaridad07/catalog:v4.1.6
+    volumes:
+       - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
+       - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/
+    image: ${DOCKER_REGISTRY-}jclaridad07/catalog:v4.1.7
