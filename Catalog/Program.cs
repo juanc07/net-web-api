@@ -20,16 +20,7 @@ namespace Catalog
         Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(webBuilder =>
             {
-                webBuilder.UseStartup<Startup>();
-                // we only need to pass a .pfx or certificate when we want to use kestrel but in our case we don't need it so we comment 
-                // this for now
-                /*webBuilder.UseKestrel(opts =>
-                {
-                    opts.ListenLocalhost(5001, listenOptions =>
-                    {
-                        listenOptions.UseHttps("wildcard.pfx", "pass123");
-                    });
-                });*/
+                webBuilder.UseStartup<Startup>();                
             });
     }
 }

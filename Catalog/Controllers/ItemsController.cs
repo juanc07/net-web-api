@@ -21,8 +21,7 @@ namespace Catalog.Controllers
             this.repository = repository;
         }
 
-        // Gets /items
-        //[RequireHttps]
+        // Gets /items        
         [HttpGet]
         public async Task<IEnumerable<ItemDto>> GetItemsAsync()
         {
@@ -30,8 +29,7 @@ namespace Catalog.Controllers
             return items;
         }
 
-        // GET /items/{id}
-        //[RequireHttps]
+        // GET /items/{id}        
         [HttpGet("{id}")]
         public async Task<ActionResult<ItemDto>> GetItemAsync(Guid id)
         {
@@ -42,8 +40,7 @@ namespace Catalog.Controllers
             }
             return item.AsDto();
         }
-
-        //[RequireHttps]
+        
         [HttpPost]
         public async Task<ActionResult<ItemDto>> CreateItemAsync(CreateItemDto itemDto)
         {
@@ -59,8 +56,7 @@ namespace Catalog.Controllers
             return CreatedAtAction(nameof(GetItemAsync), new { id = item.Id }, item.AsDto());
         }
 
-        // PUT /items/id
-        //[RequireHttps]
+        // PUT /items/id        
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateItemAsync(Guid id, UpdateItemDto itemDto)
         {
@@ -79,8 +75,7 @@ namespace Catalog.Controllers
            await repository.UpdateItemAsync(updatedItem);
             return NoContent();
         }
-
-        //[RequireHttps]
+        
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteItemAsync(Guid id)
         {
