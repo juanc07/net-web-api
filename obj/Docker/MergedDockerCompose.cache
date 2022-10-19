@@ -4,14 +4,12 @@ networks:
     name: net5tutorial
 services:
   catalog:
-    build:
-      context: D:\work\Delaware\2022\studies\net-core-studies\net-core-studies\exercise\customAPI\CustomWebAPI\Catalog\Catalog
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: https://+:443;http://+:80
       MongoDBSettings:Host: mongo
       MongoDBSettings:Password: password123
-    image: jclaridad07/catalog:v4.1.10
+    image: jclaridad07/catalog:v4.1.13
     networks:
       net5tutorial: {}
     ports:

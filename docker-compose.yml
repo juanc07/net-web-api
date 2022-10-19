@@ -1,8 +1,9 @@
 version: "3.4"
 
+# this network is used by mongo and api services so that they can speak to each other
 networks:
     net5tutorial:
-     external: true  
+     external: true
 
 volumes:
   mongodbdata:
@@ -22,7 +23,9 @@ services:
     - net5tutorial
 
  catalog:
-    build: ./Catalog    
+    image: jclaridad07/catalog:v4.1.14
+    # you only need build context when you want to rebuild your project
+    #build: ./Catalog
     networks: 
     - net5tutorial
     ports:
@@ -31,12 +34,10 @@ services:
     environment:
         - MongoDBSettings:Host=mongo
         - MongoDBSettings:Password=password123
-        - ASPNETCORE_ENVIRONMENT=Development
-    image: ${DOCKER_REGISTRY-}jclaridad07/catalog:v4.1.10
+        - ASPNETCORE_ENVIRONMENT=Development 
+    # this settings below is required only when testing locally in windows    
     #    - ASPNETCORE_URLS=https://+:443;http://+:80
-    #    - ASPNETCORE_HTTPS_PORT=8081        
-    #image: jclaridad07/catalog:v4.1.6
+    #    - ASPNETCORE_HTTPS_PORT=8081            
     #volumes:
     #   - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
-    #   - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/
-    #image: ${DOCKER_REGISTRY-}jclaridad07/catalog:v4.1.10
+    #   - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/   

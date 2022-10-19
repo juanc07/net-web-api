@@ -25,5 +25,6 @@
 **/*.md
 .dotnet
 .Microsoft.DotNet.ImageBuilder
+*.sln
 LICENSE
 README.md
