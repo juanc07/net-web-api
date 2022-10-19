@@ -15,10 +15,10 @@ services:
     networks:
       net5tutorial: {}
     ports:
-    - published: 8081
+    - published: 8080
       target: 80
     - target: 80
-    - published: 8082
+    - published: 8081
       target: 443
     - target: 443
   mongo:
