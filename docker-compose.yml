@@ -23,7 +23,7 @@ services:
     - net5tutorial
 
  catalog:
-    image: jclaridad07/catalog:v4.1.14    
+    image: jclaridad07/catalog:v4.1.22
     networks: 
     - net5tutorial
     ports:
@@ -32,4 +32,4 @@ services:
     environment:
         - MongoDBSettings:Host=mongo
         - MongoDBSettings:Password=password123
-        - ASPNETCORE_ENVIRONMENT=Development    
+        #- ASPNETCORE_ENVIRONMENT=Development

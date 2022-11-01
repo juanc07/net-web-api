@@ -6,7 +6,7 @@ ENV PATH="${PATH}:/root/.dotnet/tools"
 RUN dotnet tool install --global --no-cache dotnet-subset --version 0.3.0
 WORKDIR /source
 EXPOSE 80
-EXPOSE 443
+#EXPOSE 443
 # this will copy all the files from current directory to another directory
 #COPY . .
 # copying csproj is better than copying all
@@ -33,7 +33,8 @@ WORKDIR /app
 COPY --from=publish /app .
 
 #If you’re using the Linux Container
-HEALTHCHECK CMD curl --fail http://localhost || exit 1  
+##HEALTHCHECK CMD curl --fail http://localhost:8080 || exit 1  
+HEALTHCHECK --interval=60s --retries=5 CMD curl --fail http://localhost || exit 1
 #If you’re using Windows Container with Powershell 
 #HEALTHCHECK CMD powershell -command `  
 #    try { `
