@@ -1,5 +1,4 @@
-﻿using Catalog.Dtos;
-using Catalog.Entities;
+﻿using Catalog.Entities;
 using Catalog.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -52,6 +51,7 @@ namespace Catalog.Controllers
             {
                 Id = Guid.NewGuid(),
                 Name = itemDto.Name,
+                Description = itemDto.Description,
                 Price = itemDto.Price,
                 CreatedDate = DateTimeOffset.UtcNow
             };
@@ -64,19 +64,16 @@ namespace Catalog.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateItemAsync(Guid id, UpdateItemDto itemDto)
         {
-            var exisitingItem = await repository.GetItemAsync(id);
-            if (exisitingItem is null)
+            var existingItem = await repository.GetItemAsync(id);
+            if (existingItem is null)
             {
                 return NotFound();
             }
-            
-            Item updatedItem = exisitingItem with
-            {
-                Name = itemDto.Name,
-                Price = itemDto.Price
-            };
 
-           await repository.UpdateItemAsync(updatedItem);
+            existingItem.Name = itemDto.Name;
+            existingItem.Price = itemDto.Price;            
+
+           await repository.UpdateItemAsync(existingItem);
             return NoContent();
         }
         
