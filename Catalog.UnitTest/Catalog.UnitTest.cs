@@ -72,18 +72,25 @@ namespace Catalog.UnitTest
         public async Task GetItemsAsync_WithMatchingItems_ReturnsMatchingItems()
         {
             // Arrange
-            var expectedItems = new[] { CreateRandomItem(), CreateRandomItem(), CreateRandomItem() };
+            var allItems = new[] {
+               new Item(){Name = "Potion"},
+               new Item(){Name = "Antidote"},
+               new Item(){Name = "Hi-Potion"}
+            };
+
+            var nameToMatch = "Potion";
 
             repositoryStub.Setup(repo => repo.GetItemsAsync())
-                .ReturnsAsync(expectedItems);
+                .ReturnsAsync(allItems);
 
             var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
 
             // Act
-            var actualItems = await controller.GetItemsAsync();
+            IEnumerable<ItemDto> foundItems = await controller.GetItemsAsync(nameToMatch);
 
             // Assert
-            actualItems.Should().BeEquivalentTo(expectedItems);
+            foundItems.Should().OnlyContain(
+                item=>item.Name == allItems[0].Name || item.Name == allItems[2].Name);
         }
 
         [Fact]
